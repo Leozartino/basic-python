@@ -16,3 +16,5 @@ while (popA < popB):
 print(f'Após {anos} anos o país A ultrapassou o país B em número de habitantes.')
 print(f'País A: {popA:.2f}')
 print(f'País B: {popB:.2f}')
+
+#teste de comentario
