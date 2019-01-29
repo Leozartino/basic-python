@@ -11,13 +11,12 @@ Escreva, ainda, o lucro máximo esperado, o preço e o número de ingressos corr
 
 preco = 5 
 ingresso = 120
-maximo = 0
 
 while preco >= 1:
     vendas = preco * ingresso
     lucro = vendas - 200
 
-    if lucro > maximo:
+    if preco == 5 or lucro > maximo:
         maximo = lucro
         precoideal = preco
         qntingresso = ingresso
