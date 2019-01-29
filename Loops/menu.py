@@ -14,7 +14,7 @@ while op != 5:
 
     '''
     Quando se põem a op para ser lida ao final das estruturas de decisão,
-    de imediato é retornado "entrada inválida", pois não é substituido logo em seguida, o que não occore
+    de imediato é retornado "entrada inválida", pois não é substituido logo em seguida e o valor de op é validado pelas estruturas de seleção, o que não occore
     quando o a opção é lida logo após a exibição do menu, pois neste caso será susbstituido o valor
     definido inicialmente no programa pela entrada do usuário.
     '''
@@ -47,7 +47,5 @@ while op != 5:
         print('\nFinalizando...\n')
     else:
         print ('\nEntrada inválida')
-
-
 
 print('Encerrado')
