@@ -1,5 +1,5 @@
 
-sexo = str(input('\nInforme seu sexo:')).upper()[0]
+sexo = str(input('\nInforme seu sexo:')).upper().strip()
 
 while sexo != 'M' and sexo != 'F':
         print('Entrada invalida, tente novamente')
