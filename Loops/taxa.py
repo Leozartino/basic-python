@@ -22,6 +22,8 @@ while True:
             r = str(input('\nQuer continuar? [S/N]\n')).upper().strip()
             if r == 'N':
                 break
+        if r == 'N':
+            break
 
 
 

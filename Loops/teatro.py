@@ -9,3 +9,25 @@ Escreva, ainda, o lucro máximo esperado, o preço e o número de ingressos corr
 
 '''
 
+preco = 5 
+ingresso = 120
+maximo = 0
+
+while preco >= 1:
+    vendas = preco * ingresso
+    lucro = vendas - 200
+
+    if lucro > maximo:
+        maximo = lucro
+        precoideal = preco
+        qntingresso = ingresso
+
+    print(f'Vendendo o ingresso a R$ {preco}, espera-se vender {ingresso} ingressos com lucro R${lucro}\n')
+    preco = preco - 0.5
+    ingresso = ingresso + 26
+
+print(f'O valor máximo de lucro é de {maximo}, vendendo a R${precoideal} com {qntingresso} de ingressos vendidos')
+    
+    
+    
+        
