@@ -25,7 +25,7 @@ while preco >= 1:
     preco = preco - 0.5
     ingresso = ingresso + 26
 
-print(f'O valor máximo de lucro é de {maximo}, vendendo a R${precoideal} com {qntingresso} de ingressos vendidos')
+print(f'O valor máximo de lucro é de R$ {maximo}, vendendo a R$ {precoideal} com {qntingresso} de ingressos vendidos')
     
     
     
