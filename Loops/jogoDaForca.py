@@ -8,7 +8,7 @@ from random import choice
 palavras = ['Açaí', 'Cupuaçu', 'Manga', 'Goiaba']
 palavras = choice(palavras)
 palavra = palavras.upper()
-traco = '_ ' * len(palavra)
+traco = ['_ '] * len(palavra)
 
 print(traco)
 print('--------*--------')
@@ -20,7 +20,7 @@ while True:
     indice = 0
     contA = contE = 0
     #Loop para varrer a string e fazer a comparação durante o processo.
-    while indice < (len(palavra)-1):
+    while indice <= (len(palavra)-1):
         if letra == palavra[indice]:
             traco[indice] = letra
             contA += 1
