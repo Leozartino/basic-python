@@ -8,15 +8,38 @@ from random import choice
 palavras = ['Açaí', 'Cupuaçu', 'Manga', 'Goiaba']
 palavras = choice(palavras)
 palavra = palavras.upper()
+traco = '_ ' * len(palavra)
 
+print(traco)
 print('--------*--------')
 print('Jogo da forca\nTema: Frutas')
 print('--------*--------')
-advinha = str(input('Informe uma letra: ')).strip().capitalize()
 
-if advinha[0] in palavra.upper():
-    print(palavra.count(advinha))
-    #Criar um loop para varrer a string e fazer a comparação durante o processo.
-    print(palavra.find(advinha))
+while True:
+    letra = str(input('\nInforme uma palavra: ')).strip().upper()[0]
+    indice = 0
+    contA = contE = 0
+    #Loop para varrer a string e fazer a comparação durante o processo.
+    while indice < (len(palavra)-1):
+        if letra == palavra[indice]:
+            traco[indice] = letra
+            contA += 1
+        indice += 1
+    if contA == 0:
+        contE += 1              
+    print(traco)
+    if contE == 6:
+        break
+        
+            
+
+
+
+
+
+
+    
+
+
 
 
