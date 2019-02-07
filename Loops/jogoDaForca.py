@@ -8,7 +8,14 @@ from random import choice
 palavras = ['Açaí', 'Cupuaçu', 'Manga', 'Goiaba']
 palavras = choice(palavras)
 palavra = palavras.upper()
+c = []
+index = 0
+while index < len(palavra):
+    c.append(palavra[index])
+    index += 1
+
 traco = ['_ '] * len(palavra)
+cond = condV = 0
 
 print(traco)
 print('--------*--------')
@@ -17,19 +24,29 @@ print('--------*--------')
 
 while True:
     letra = str(input('\nInforme uma palavra: ')).strip().upper()[0]
-    indice = 0
-    contA = contE = 0
+    indice =  contE = contA = 0
     #Loop para varrer a string e fazer a comparação durante o processo.
-    while indice <= (len(palavra)-1):
+    while indice < (len(palavra)): 
         if letra == palavra[indice]:
-            traco[indice] = letra
-            contA += 1
+             traco[indice] = letra
+             contA += 1
+        else:
+            contE += 1
         indice += 1
-    if contA == 0:
-        contE += 1              
+
     print(traco)
-    if contE == 6:
+
+    if traco == c:
+        print('\nVoce ganhou!')
         break
+    if contE == len(palavra):
+        cond += 1
+  
+    if cond == 6:
+        print('\nGame Over!')
+        break
+
+
         
             
 
