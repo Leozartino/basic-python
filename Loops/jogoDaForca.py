@@ -5,7 +5,7 @@ O jogador poderá errar 6 vezes antes de ser enforcado..
 '''
 from random import choice
 
-palavras = ['Açaí', 'Cupuaçu', 'Manga', 'Goiaba']
+palavras = ['Açaí', 'Cupuaçu', 'Manga', 'Goiaba', 'Jaca', '']
 palavras = choice(palavras)
 palavra = palavras.upper()
 c = []
@@ -17,10 +17,11 @@ while index < len(palavra):
 traco = ['_ '] * len(palavra)
 cond = condV = 0
 
-print(traco)
+
 print('--------*--------')
 print('Jogo da forca\nTema: Frutas')
 print('--------*--------')
+print(traco)
 
 while True:
     letra = str(input('\nInforme uma palavra: ')).strip().upper()[0]
